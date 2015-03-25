@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiSense TX</string>
+    <string name="ready">Ready</string>
+    <string name="title_activity_display_message"> </string>
+    <string name="info">info</string>
+    <string name="ok">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter period</string>
+    <string name="button_send">"?????? :D"</string>
+    <string name="title_activity_my">Send sensor data to MongoDB</string>
+    <string name="stopbtt">Stop!</string>
+    <string name="startbtt">Start!</string>
+    <string name="coll">Enter collection name</string>
+    <string name="check">Check available sensors</string>
+    <string name="network_status_wifi">Wi-Fi</string>
+    <string name="network_status_cell">Cellular</string>
+    <string name="network_status_no">No network connection</string>
+    <string name="net_status">Network status: </string>
+    <string name="job_status">Job status: </string>
+    <string name="sensorList">List of sensors: </string>
+    <string name="selected">Selected sensor: </string>
+    <string name="no_selected">(none)</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_start">start</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>
