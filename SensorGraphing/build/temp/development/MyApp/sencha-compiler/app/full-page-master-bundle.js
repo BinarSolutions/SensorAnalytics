@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /home/karolis/bandome/app/app.js
+// @require C:\Users\Karolis\Documents\GitHub\SensorAnalytics\SensorGraphing\app.js

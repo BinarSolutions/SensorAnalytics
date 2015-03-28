@@ -59,6 +59,13 @@ Ext.define('MyApp.view.main.Main', {
 	height : 40,		
         html : '<font size="5" color="white"><b>Sensors data.</b></font'
 	},{
+    xtype: 'panel',
+    title: 'Sensors',
+    region: 'west',
+    width: 250,
+    split: true,
+	collapsible: true,
+    },{
         region: 'center',
         xtype: 'tabpanel',
         items:[{
