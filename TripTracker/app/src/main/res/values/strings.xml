@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trip tracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_job">Job</string>
+    <string name="not_online">Device is not online!</string>
+    <string name="pick_account">You must pick google account!</string>
+</resources>
