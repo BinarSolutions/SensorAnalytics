@@ -15,17 +15,17 @@ tools:context=".MainActivity"
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="280dp">
+        android:layout_height="480dp">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="220dp">
+            android:layout_height="420dp">
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="230dp"
+                android:layout_height="fill_parent"
                 android:layout_weight="1">
 
                 <EditText android:id="@+id/edit_message"
@@ -33,54 +33,84 @@ tools:context=".MainActivity"
                     android:layout_height="wrap_content"
                     android:hint="@string/edit_message"
                     android:inputType="number"
-                    android:textSize="13sp"
-                    android:textColor="#ffffaf00" />
+                    android:textSize="16sp"
+                    android:textColor="#ffffaf00"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_expl"
+                    android:id="@+id/period_explain" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="#ffabff0f"
+
+                    android:textSize="16sp"
+                    android:maxLines="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_expl"
+                    android:id="@+id/name_explain" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/selected"
-                    android:textSize="16sp"
-                    android:textColor="#ffff1800"
+                    android:textColor="#ff56a435"
                     android:textIsSelectable="false"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/selSensor"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:textColor="#b5ff3209"/>
+                    android:textColor="#ffff5400"
+                    android:text="@string/no_selected"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/net_status"
-                    android:textSize="16sp"
-                    android:textColor="#ff1cff02"
-                    android:textStyle="bold" />
+                    android:textColor="#ff36bfca"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/net_status"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="16sp"
                     android:textColor="#ff00ff9e"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/job_status"
-                    android:textSize="16sp"
-                    android:textColor="#ffffd600"
+                    android:textSize="18sp"
+                    android:textColor="#ffe74e1a"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/jobStatus"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:textColor="#ff00c8ff"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff00"
                     android:paddingBottom="10dp" />
 
             </LinearLayout>
@@ -88,20 +118,20 @@ tools:context=".MainActivity"
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="230dp"
+                android:layout_height="fill_parent"
                 android:layout_weight="1">
 
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/sensorList"
-                    android:textColor="#ffff0100"
-                    android:textSize="16sp"
+                    android:textColor="#fffff202"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <ListView
                     android:layout_width="fill_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="match_parent"
                     android:textColor="#ffff1800"
                     android:id="@+id/sensor_list" />
 

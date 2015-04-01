@@ -10,7 +10,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.knddevs.wisensetx"
+        applicationId "com.bssa.wisensetx"
         minSdkVersion 17
         targetSdkVersion 21
         versionCode 1
