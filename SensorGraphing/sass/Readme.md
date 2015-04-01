@@ -16,19 +16,19 @@ mixins, etc.).
 
 This folder contains Sass files defining CSS rules corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'MyApp'. This is set in
+folder are mapped to the application's root namespace, 'SensorsData'. This is set in
 `"app.json"`:
 
     "sass": {
-        "namespace": "MyApp"
+        "namespace": "SensorsData"
     }
 
 ### ./sass/var
 
 This folder contains Sass files defining Sass variables corresponding to classes
 included in the application's JavaScript code build. By default, files in this 
-folder are mapped to the application's root namespace, 'MyApp' in the same way
-as `"MyApp/sass/src"`.
+folder are mapped to the application's root namespace, 'SensorsData' in the same way
+as `"SensorsData/sass/src"`.
 
 ## Slicing
 

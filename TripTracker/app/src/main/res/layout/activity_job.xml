@@ -43,25 +43,33 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
 
             <Button
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Start trip"
                 android:id="@+id/button"
                 android:onClick="start"
                 android:gravity="center"
-                style="@android:style/ButtonBar" />
+                style="@android:style/ButtonBar"
+                android:layout_weight="0.48"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04" />
 
             <Button
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="End trip"
                 android:id="@+id/button2"
                 android:onClick="stop"
                 android:gravity="center"
-                style="@android:style/ButtonBar" />
+                style="@android:style/ButtonBar"
+                android:layout_weight="0.48"/>
         </LinearLayout>
 
     </LinearLayout>

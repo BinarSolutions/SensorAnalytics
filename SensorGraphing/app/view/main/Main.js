@@ -1,11 +1,11 @@
-Ext.define('MyApp.view.main.Main', {
+Ext.define('SensorsData.view.main.Main', {
 	
 	
     extend: 'Ext.container.Container',
 	
     requires: [
-        'MyApp.view.main.MainController',
-        'MyApp.view.main.MainModel'
+        'SensorsData.view.main.MainController',
+        'SensorsData.view.main.MainModel'
     ],
 	alias: 'widget.Main',
     xtype: 'app-main',
@@ -65,6 +65,7 @@ Ext.define('MyApp.view.main.Main', {
     width: 250,
     split: true,
 	collapsible: true,
+	collapsed: true
     },{
         region: 'center',
         xtype: 'tabpanel',
@@ -184,7 +185,6 @@ Ext.define('MyApp.view.main.Main', {
 				columns: [
 					{ text: 'Device',  dataIndex: 'Device', flex: 1 },
 					{ text: 'Time', dataIndex: 'timevalue', flex: 1.5 },
-					{ text: 'Light value', dataIndex: 'light_value', flex: 0.8 },
 					{ text: 'Magnetic field x', dataIndex: 'Magnetic_x', flex: 1 },
 					{ text: 'Magnetic field y', dataIndex: 'Magnetic_y', flex: 1 },
 					{ text: 'Magnetic field z', dataIndex: 'Magnetic_z', flex: 1 }

@@ -13,13 +13,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url 'http://dl.bintray.com/esri/arcgis'
-        }
     }
 }
 
 dependencies {
     apply plugin: 'java'
-    compile 'org.mongodb:mongodb-driver:3.0.0-rc1'
+    //compile 'org.mongodb:mongodb-driver:3.0.0-rc1'
 }

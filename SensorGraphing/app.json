@@ -2,7 +2,12 @@
     /**
      * The application's namespace.
      */
-    "name": "MyApp",
+    "name": "SensorsData",
+    
+    /**
+     * The version of the application.
+     */
+    "version": "1.0.0.0",
 
     /**
      * The relative path to the appliaction's markup file (html, jsp, asp, etc.)
@@ -28,7 +33,7 @@
      * The name of the theme for this application.
      */
     
-    "theme": "ext-theme-crisp",
+    "theme": "ext-theme-aria",
     
     /**
      * The list of required packages (with optional versions; default is "latest").
@@ -40,7 +45,7 @@
      *      ]
      */
     "requires": [
-		sencha-charts
+		"sencha-charts"
     ],
 
     /**
@@ -49,13 +54,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "MyApp.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "MyApp.view" then
+         * sass/src and sass/var directories. For example, "SensorsData.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "SensorsData.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "MyApp.view.Foo" to "sass/src/MyApp/view/Foo.scss".
+         * "SensorsData.view.Foo" to "sass/src/SensorsData/view/Foo.scss".
          */
-        "namespace": "MyApp"
+        "namespace": "SensorsData"
     },
 
     /**
@@ -302,8 +307,24 @@
     },
 
     /**
+     * The space config object is used by the sencha app publish command to deploy this application to sencha space
+     * "space": {
+     *     // the space id for this application
+     *     "id": 12345,
+     *     // space host
+     *     "host": "https://api.space.sencha.com/json.rpc",
+     *     // can be a zip file path, or a folder to be zipped and deployd to sencha space
+     *     "file": "${app.output.base}",
+     *     // These may be specified here, but are best specified in your user
+     *     // ~/.sencha/cmd/sencha.cfg file
+     *     "apiKey": "",
+     *     "secret": ""
+     * }
+     */
+
+    /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "8bf03d9a-fc95-47b4-91be-d8b6745f07ba"
+    "id": "55b4dda6-6af3-4892-a3a9-696275b75a4d"
 }
