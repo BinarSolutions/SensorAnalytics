@@ -3,14 +3,13 @@
  * Ext.application(). This is the ideal place to handle application launch and initialization
  * details.
  */
-Ext.define('MyApp.Application', {
+Ext.define('SensorsData.Application', {
     extend: 'Ext.app.Application',
     
-    name: 'MyApp',
+    name: 'SensorsData',
 
     stores: [
         // TODO: add global / shared stores here
-		
     ],
     
     launch: function () {

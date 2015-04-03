@@ -4,14 +4,14 @@
  * Sencha Cmd when upgrading.
  */
 Ext.application({
-    name: 'MyApp',
+    name: 'SensorsData',
 
-    extend: 'MyApp.Application',
+    extend: 'SensorsData.Application',
     
-    autoCreateViewport: 'MyApp.view.main.Main'
+    autoCreateViewport: 'SensorsData.view.main.Main'
 	
     //-------------------------------------------------------------------------
-    // Most customizations should be made to MyApp.Application. If you need to
+    // Most customizations should be made to SensorsData.Application. If you need to
     // customize this file, doing so below this section reduces the likelihood
     // of merge conflicts when upgrading to new versions of Sencha Cmd.
     //-------------------------------------------------------------------------

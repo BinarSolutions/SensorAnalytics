@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Random rand = new Random();
-        int n = rand.nextInt(8);
+        int n = rand.nextInt(5);
 
         Timer timer = new Timer();
         MyTimerTask myTask = new MyTimerTask();
