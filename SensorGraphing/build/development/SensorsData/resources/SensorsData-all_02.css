@@ -3304,6 +3304,7 @@ tr.x-grid-subtable-row {
 .x-resizable-pinned .x-resizable-handle-southwest {
   background-position: 2px -2px; }
 
+/* including package ext-theme-aria */
 /* including package ext-aria */
 /* line 1, ../../../../ext/packages/ext-aria/sass/src/panel/Panel.scss */
 .x-panel-header .x-tool.x-focus .x-tool-img {
@@ -3329,7 +3330,6 @@ tr.x-grid-subtable-row {
 .x-window-header .x-tool.x-focus .x-tool-img {
   background-color: #ed9200; }
 
-/* including package ext-theme-aria */
 /* including package sencha-charts */
 /*
   Copied from touch/resources/themes/stylesheets/sencha-touch/base/src/chart/_AbstractChart.scss
