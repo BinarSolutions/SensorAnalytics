@@ -1,3 +1,4 @@
+/* ======================== ETC ======================== */
 /* including package ext-theme-base */
 /**
  * Creates a background gradient.
@@ -81,10 +82,10 @@
  */
 /* including package ext-theme-neutral */
 /* including package ext-theme-neptune */
-/* including package ext-aria */
-/* including package ext-theme-aria */
 /* including package ext-theme-aria */
 /* including package ext-aria */
+/* ======================== VAR ======================== */
+/* including package ext-theme-aria */
 /* including package ext-theme-neptune */
 /** @class Global_CSS */
 /** @class Ext.LoadMask */
@@ -7492,7 +7493,9 @@
  * @private
  * Flag to ensure GridField rules only get set once
  */
+/* including package ext-aria */
 /* including package sencha-charts */
+/* ======================== RULE ======================== */
 /* including package ext-theme-base */
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/scroll/TouchScroller.scss */
 .x-scroll-container {
@@ -23589,19 +23592,19 @@ div.x-border-layout-ct {
 
 /* line 142, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
 .x-fieldset-header-checkbox-default {
-  margin: 2px 3px 0 0;
+  margin: 2px 4px 0 0;
   line-height: 16px; }
   /* line 145, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
   .x-fieldset-header-checkbox-default.x-rtl {
-    margin: 2px 0 0 3px; }
+    margin: 2px 0 0 4px; }
 
 /* line 152, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
 .x-fieldset-header-tool-default {
-  margin: 2px 3px 0 0;
+  margin: 2px 4px 0 0;
   padding: 0; }
   /* line 155, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
   .x-fieldset-header-tool-default.x-rtl {
-    margin: 2px 0 0 3px; }
+    margin: 2px 0 0 4px; }
   /* line 161, ../../../../ext/packages/ext-theme-neutral/sass/src/form/FieldSet.scss */
   .x-fieldset-header-tool-default > .x-tool-img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);

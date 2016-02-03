@@ -15,6 +15,11 @@ Ext.define('SensorsData.view.main.Main', {
 		fields: ['Device', 'timevalue', 'light_value', 'Magnetic_x', 'Magnetic_y', 'Magnetic_x']
 	}),
 	
+	var: model1 = Ext.define('User1', {
+		extend: 'Ext.data.Model',
+		fields: ['_type', '_id', 'Device', 'Name', 'Date', "X", "Y", "Z"]
+	}),
+	
 	var: LightStore = Ext.create('Ext.data.Store', {
                 model: model,
                 proxy: {
@@ -29,12 +34,14 @@ Ext.define('SensorsData.view.main.Main', {
 
 
 	var: myStore = Ext.create('Ext.data.Store', {
-		model: model,
+		model: model1,
 		proxy: {
-			type: 'ajax',
-			url: '/duomenys/Magnetic_field.txt',
+			type: 'rest',
+			url: '/domenys/Magnetic_field.txt',
 			reader: {
-				type: 'json'
+				type: 'json',
+				rootProperty: 'rh:doc',
+				idProperty: '_id'
 			}
 		},
 		autoLoad: true
@@ -114,7 +121,7 @@ Ext.define('SensorsData.view.main.Main', {
 				items: [{
 					xtype: 'chart',
 					store: myStore,
-					interactions: ['panzoom'],
+					interactions: ['crosszoom'],
 						
 					legend: {
 						docked: 'bottom'
@@ -134,8 +141,8 @@ Ext.define('SensorsData.view.main.Main', {
 					//define the actual series
 					series: [{
 						type: 'line',
-						xField: 'timevalue',
-						yField: 'Magnetic_x',
+						xField: 'Date',
+						yField: 'X',
 						title: 'Magnetic field x',
 						style: {
 							//smooth: true,
@@ -148,8 +155,8 @@ Ext.define('SensorsData.view.main.Main', {
 						}
 					},{
 						type: 'line',
-						xField: 'timevalue',
-						yField: 'Magnetic_y',
+						xField: 'Date',
+						yField: 'Y',
 						title: 'Magnetic field y',
 						style: {
 							//smooth: true,
@@ -162,8 +169,8 @@ Ext.define('SensorsData.view.main.Main', {
 						}
 					},{
 						type: 'line',
-						xField: 'timevalue',
-						yField: 'Magnetic_z',
+						xField: 'Date',
+						yField: 'Z',
 						title: 'Magnetic field z',
 						style: {
 							//smooth: true,
@@ -183,11 +190,12 @@ Ext.define('SensorsData.view.main.Main', {
 				xtype: 'grid',
 				store: myStore, 
 				columns: [
+					{ text: 'Name',  dataIndex: 'Name', flex: 1 },
 					{ text: 'Device',  dataIndex: 'Device', flex: 1 },
-					{ text: 'Time', dataIndex: 'timevalue', flex: 1.5 },
-					{ text: 'Magnetic field x', dataIndex: 'Magnetic_x', flex: 1 },
-					{ text: 'Magnetic field y', dataIndex: 'Magnetic_y', flex: 1 },
-					{ text: 'Magnetic field z', dataIndex: 'Magnetic_z', flex: 1 }
+					{ text: 'Time', dataIndex: 'Date', flex: 1.5 },
+					{ text: 'Magnetic field x', dataIndex: 'X', flex: 1 },
+					{ text: 'Magnetic field y', dataIndex: 'Y', flex: 1 },
+					{ text: 'Magnetic field z', dataIndex: 'Z', flex: 1 }
 				]
 			}]
 		}]
